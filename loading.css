@@ -1,0 +1,173 @@
+body, html {
+	font: 24px 'Microsoft YaHei', Arial, Lucida Grande, Tahoma, sans-serif;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background-color: black;
+}
+h1 {
+	color: #ffffff;
+	font-size: 1.2rem;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle; /*middle centred*/
+	display: table-cell; /*acts like a table cell*/
+	font-family: Microsoft Jhenghei;
+}
+.main {
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	text-align: center;
+	left: 0;
+	top: 30%;
+}
+.logo img {
+	height: 64px;
+}
+.tips {
+	color: #fff;
+	margin-top: 30px;
+	font-size: 26px;
+	font-weight: 700;
+}
+ @media (max-width: 899px) {
+.bg {
+	opacity: .56;
+}
+.main {
+	top: 12%;
+}
+.logo img {
+	height: 30px;
+}
+.loading {
+	margin-top: -46px;
+}
+.tips {
+	margin-top: -25px;
+	font-size: 12px;
+}
+}
+}
+ @-webkit-keyframes iconAnimation {
+0% {
+background-position:0 0
+}
+6.25% {
+background-position:-320px 0
+}
+12.50% {
+background-position:-640px 0
+}
+18.75% {
+background-position:-960px 0
+}
+25.00% {
+background-position:-1280px 0
+}
+31.25% {
+background-position:-1600px 0
+}
+37.50% {
+background-position:-1920px 0
+}
+43.75% {
+background-position:-2240px 0
+}
+50.00% {
+background-position:-2560px 0
+}
+56.25% {
+background-position:-2880px 0
+}
+62.50% {
+background-position:-3200px 0
+}
+68.75% {
+background-position:-3520px 0
+}
+75.00% {
+background-position:-3840px 0
+}
+81.25% {
+background-position:-4160px 0
+}
+87.50% {
+background-position:-4480px 0
+}
+93.75% {
+background-position:0 -184px
+}
+100.00% {
+background-position:-320px -184px
+}
+}
+@keyframes iconAnimation {
+0% {
+background-position:0 0
+}
+6.25% {
+background-position:-320px 0
+}
+12.50% {
+background-position:-640px 0
+}
+18.75% {
+background-position:-960px 0
+}
+25.00% {
+background-position:-1280px 0
+}
+31.25% {
+background-position:-1600px 0
+}
+37.50% {
+background-position:-1920px 0
+}
+43.75% {
+background-position:-2240px 0
+}
+50.00% {
+background-position:-2560px 0
+}
+56.25% {
+background-position:-2880px 0
+}
+62.50% {
+background-position:-3200px 0
+}
+68.75% {
+background-position:-3520px 0
+}
+75.00% {
+background-position:-3840px 0
+}
+81.25% {
+background-position:-4160px 0
+}
+87.50% {
+background-position:-4480px 0
+}
+93.75% {
+background-position:0 -184px
+}
+100.00% {
+background-position:-320px -184px
+}
+}
+.loading {
+	width: 320px;
+	height: 184px;
+	z-index: 3;
+	background: url(loading.png) no-repeat;
+	-webkit-transform: scale(.5);
+	transform: scale(.5);
+	-webkit-animation: iconAnimation .94s steps(1) infinite;
+	animation: iconAnimation .94s steps(1) infinite;
+	vertical-align: middle;
+	display: inline-block;
+}
